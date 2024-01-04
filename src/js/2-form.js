@@ -33,9 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (emailValue && messageValue) {
       
-      
-      console.log('Email:', emailValue);
-      console.log('Message:', messageValue);
+        const formData = {
+            email: emailValue,
+            message: messageValue,
+        };
+
+        console.log(formData);
+
+    //   console.log('Email:', emailValue);
+    //   console.log('Message:', messageValue);
 
       
       feedbackForm.reset();
